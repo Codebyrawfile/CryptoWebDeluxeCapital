@@ -1,0 +1,964 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f2331;
+    --secondary-color: #d4af37;
+    --light-color: #84d2c5;
+}
+
+
+/* DEFAULT RESETS */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    font-size: 1rem;
+} 
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Ubuntu', sans-serif;
+
+}
+
+p  {
+    margin: 10px 0;
+    font-weight: 700;
+    
+}
+img {
+    width: 100%;
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+    background-color: var(--primary-color);
+    height: 80px;
+    color: #fff;
+    position: relative;
+}
+
+.navbar img {
+    width: 80px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--secondary-color);
+    padding: 10px;
+    margin: 0 5px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar ul a:hover {
+    color: #fff;
+    transform: scale(1.0s);
+}
+
+
+.signup-btn {
+    /* border-radius: 10px; */
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    transition: background-color 0.2s, border 0.2s,  transform 0.2s;
+  }
+
+
+  .signup-btn:hover {
+    background-color: var(--secondary-color);
+    color: #333;
+    transform: scale(1.6s);
+  }
+
+  .toggle-btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    display: none;
+  }
+
+  /* DROPDOWN MENU */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: var(--primary-color);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 100;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 450px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu li a:hover {
+    color: #fff;
+}
+
+.dropdown-menu .signup-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  /* HERO SECTION */
+
+  .herosection {
+    height: 500px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+  }
+
+  .herosection .flex {
+    gap: 30px;
+  }
+
+  /* .herosection .card1 {
+   width: 50%;
+  } */
+
+  .herosection h1 {
+    font-size: 50px;
+    margin-top: 0;
+    color: var(--secondary-color);
+  }
+
+   .content {
+    border: 1px solid #fff;
+    /* border-radius: 10px; */
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .herosection img {
+    width: 400px;
+  }
+
+
+  /* PLATFORM SECTION */
+
+  .platformsection,
+  .whoarewe,
+  .testimonial {
+    margin-top: 80px;
+  }
+
+  .platformsection h1, h4,
+  .acceptDeposit h1, h4,
+  .testimonial h1, h3, h4 {
+    text-align: center;
+  }
+
+  .platformsection h1,
+  .acceptDeposit h1 {
+    font-size: 30px;
+  }
+
+  .platformsection h4,
+  .acceptDeposit h4 {
+    font-size: 20px;
+  }
+
+  .platformsection .grid {
+    margin-top: 80px;
+    position: relative;
+  }
+
+  .platformsection .circle {
+    text-align: center;
+    border: 3px dotted var(--primary-color);
+    padding: 40px;
+    border-radius: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .platformsection .grid .flag {
+    position: absolute;
+    bottom: 79%;
+    left: 80%;
+  }
+
+
+  .platformsection .grid .fa-wallet {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+  
+  
+
+  .platformsection .grid .fa-key {
+    position: absolute;
+    top: -5%;
+    left: 45%;
+  }
+
+  .platformsection .grid .fa-eye {
+    position: absolute;
+    top: 79%;
+    left: 7%;
+  }
+
+  .platformsection .grid .fa-cogs {
+    position: absolute;
+    top: 79%;
+    left: 80%;
+  }
+
+ 
+
+
+  .platformsection .grid .fa-desktop {
+    position: absolute;
+    top: 15%;
+    left: 85%;
+  }
+
+  .platformsection .content,
+  .acceptDeposit .content {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    border-radius: 10px;
+  }
+
+  .create-act-btn:hover {
+    color: #333;
+  }
+
+ 
+
+
+  /* .card2-1 {
+   width: 100%;
+  } */
+
+
+  /* WHO WE ARE SECTION */
+
+  .whoarewe {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: #fff;
+  }
+
+  .m-l {
+    border-left: 4px solid var(--secondary-color);
+    padding: 0 10px;
+    border-radius: 2px;
+  }
+
+  .whoarewe h2 {
+    font-size: 19px;
+  }
+
+  .whoarewe p {
+    margin-bottom: 30px;
+  }
+
+  .whoarewe h1 {
+    font-size: 35px;
+    margin-top: 30px;
+  }
+
+  .whoarewe .card2-1 {
+    width: 100%;
+  }
+
+
+
+  /* TRUSTED BY SECTION */
+.trustedby {
+    text-align: center;
+}
+
+.trustedby .flex {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.trustedby .card1 {
+    margin-top: 80px;
+}
+
+.trustedby h1 {
+    font-size: 35px;
+}
+
+/* KEY STRATEGIES */
+
+.keystrategies {
+    margin-top: 80px;
+    background-color: var(--primary-color);
+    /* height: 600px; */
+    padding: 60px 20px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.keystrategies h1 {
+    font-size: 40px;
+}
+
+.keystrategies .cards {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  max-width: 100%;
+  height: 350px;
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+  position: relative;
+}
+
+.keystrategies .cards h4 {
+  margin: 20px 0;
+}
+
+.keystrategies .cards:hover {
+  transform: translateY(-15px);
+}
+
+.keystrategies .small-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  background-color: var(--light-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: background-color 0.3s, border 0.2s,  transform 0.3s;
+}
+
+/* .keystrategies .small-circle:hover {
+  background-color: transparent;
+  transform: scale(1..5s);
+} */
+
+.keystrategies .i-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  transition: background-color 0.3s, border 0.2s,  transform 0.3s;
+}
+
+/* .keystrategies .i-center:hover {
+  color: var(--secondary-color);
+  transform: scale(1.5s);
+} */
+
+.keystrategies-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 5px 16px;
+  border-radius: 30px;
+  bottom: -5%;
+  background-color: var(--light-color);
+}
+
+.create-btn {
+  right: 30%;
+}
+
+.invest-btn {
+  right: 33%;
+}
+
+.withdraw-btn {
+  right: 35%;
+}
+
+.reinvest-btn {
+  left: 25%;
+}
+
+/* ACCEPT DEPOSIT SECTION */
+
+.acceptDeposit {
+  margin-top: 80px;
+  padding: 40px;
+}
+
+.acceptDeposit .grid {
+  margin-top: 80px;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 100%;
+  
+}
+
+.acceptDeposit .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.acceptDeposit .flex {
+ justify-content: space-between;
+ align-items: center;
+ gap: 20px;
+}
+
+.acceptDeposit .card {
+  border-radius: 30px;
+  margin: 0;
+}
+
+.acceptDeposit .card h5 {
+  font-size: 16px;
+}
+
+.acceptDeposit .card p {
+  margin-top: 0;
+  line-height: normal;
+  color: #fff;
+  font-size: 13px;
+}
+
+.acceptDeposit .card img {
+  width: 50px;
+}
+ 
+.acceptDeposit .left {
+  width: 100%;
+}
+
+
+.acceptDeposit .middle {
+  width: 100%;
+}
+
+.acceptDeposit .middle img {
+  width: 80%;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial .background {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+}
+.testimonial .flex {
+  margin-top: 80px;
+}
+
+.testimonial h3 {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.testimonial .flex h4 {
+  font-size: 22px;
+}
+
+.testimonial .flex h6 {
+  font-size: 16px;
+  color: #fff;
+}
+
+
+.testimonial .cards {
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial .cards:hover {
+  transform: scale(1.10);
+}
+
+
+.testimonial .small-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial .small-container:hover {
+  opacity: 1;
+}
+
+
+.testimonial .cards img {
+  width: 100px;
+  top: -20%;
+  left: 30%;
+  margin-bottom: 20px;
+}
+
+/* MARKET CHAT SECTION */
+
+.marketchat .marketchat {
+  margin-top: 80px;
+  padding: 40px;
+}
+
+/* WHERE TO BUY CRYPTOCURRENCY SECTION */
+
+.whereToBuy {
+  height: 500px;
+  margin-top: 80px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+}
+
+.whereToBuy h1 {
+  font-size: 40px;
+}
+
+.whereToBuy h4 {
+  margin-bottom: 40px;
+}
+
+.whereToBuy .navbar ul {
+  justify-content: space-between;
+}
+
+.whereToBuy .btn {
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* CRAFTED BY SECTION */
+
+.craftedby {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.craftedby h1 {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+.craftedby .h1 {
+  width: 60%;
+}
+.craftedby .flex{
+  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.craftedby .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.craftedby .btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* FAST AND RELIABLE SECTION */
+.fastAndReliable {
+  font-weight: 400;
+  margin-top: 80px;
+  padding: 40px;
+}
+
+.fastAndReliable .box {
+  padding: 20px 50px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1.0);
+}
+
+.fastAndReliable h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.fastAndReliable img {
+  width: 50px;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.fastAndReliable img:hover {
+  opacity: 1;
+  transform: scale(1.2s);
+}
+
+.fastAndReliable .flex {
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--primary-color);
+  margin-top: 80px;
+  padding: 20px 50px;
+  color: var(--secondary-color);
+}
+.footer .log {
+  width: 100%;
+}
+
+.footer p {
+  margin-top: 30px;
+}
+
+.footer .home {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .home li {
+  padding-top: 16px;
+  font-weight: 700;
+}
+
+
+.footer a{
+  color:var(--secondary-color);
+}
+
+.footer .grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer img {
+  width: 80px;
+}
+
+.footer .email-btn,
+.footer .btn {
+  border: none;
+  padding: 16px 32px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+  margin-top: 16px;
+}
+
+
+
+.footer .email-btn:focus {
+  outline: none;
+}
+
+.footer .btn:hover {
+  color: #fff;
+  border: 1px solid var(--secondary-color);
+}
+
+
+.footer .news {
+  text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+
+/* TABLETS */
+
+@media (max-width: 807px) {
+  .herosection h1 {
+    font-size: 40px;
+  }
+
+  .herosection img {
+    width: 350px;
+  }
+
+}
+
+
+@media(max-width: 768px){
+  /* body {
+    display: none;
+  } */
+
+
+  /* UTILITIES */
+
+  .flex {
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .grid,
+  .footer .grid,
+  .acceptDeposit .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+  /* NAVBAR */
+  .navbar {
+    height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .navbar a {
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 8px;
+}
+
+.navbar .flex {
+  flex-direction: row;
+}
+
+.navbar ul,
+.display {
+  display: none;
+}
+
+
+.navbar .toggle-btn {
+  display: block;
+}
+
+.dropdown-menu {
+  display: block;
+}
+
+
+
+
+  /* HERO SECTION */
+
+  .herosection {
+    height: 100%;
+  }
+
+
+  /* ACCEPTED DEPOSIT SECTION */
+  .acceptDeposit .middle {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .acceptDeposit .middle {
+  width: 50%;
+} 
+
+.acceptDeposit .middle img {
+  width: 100%;
+}
+
+
+
+
+  /* KEY STRATEGIES */
+  .create-btn {
+    right: 40%;
+  }
+
+  .invest-btn {
+    right: 43%;
+  }
+
+  .withdraw-btn {
+    right: 40%;
+  }
+
+  .reinvest-btn {
+    left: 40%;
+  }
+
+  /* WHERE TO BUY */
+  .whereToBuy {
+    height: 100%;
+  }
+
+  .dropdown-menu {
+    left: 32px;
+    width: unset;
+  }
+  
+}
+
+/* CHECKING REPOS */
+/* MOBILES */
+@media (max-width: 550px) {
+  .whereToBuy .navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  #display {
+    display: none;
+  }
+
+  .dropdown-menu {
+    left: 32px;
+    width: unset;
+  }
+
+}
+
+
+
+@media(max-width: 486px){
+  .dropdown-menu {
+    left: 32px;
+    width: unset;
+  }
+}
+
+
+@media (max-width: 453px) {
+  /* KEY STRATEGIES */
+  .create-btn {
+    right: 40%;
+  }
+
+  .invest-btn {
+    right: 40%;
+  }
+
+  .withdraw-btn {
+    right: 35%;
+  }
+
+  .reinvest-btn {
+    left: 37%;
+  } 
+
+}
+
+@media (max-width: 519px) {
+  /* KEY STRATEGIES */
+  .create-btn {
+    right: 38%;
+  }
+
+  .invest-btn {
+    right: 38%;
+  }
+
+  .withdraw-btn {
+    right: 34%;
+  }
+
+  .reinvest-btn {
+    left: 35%;
+  } 
+
+}
+
+
+
+
+@media (max-width: 400px) {
+  .herosection h1 {
+    font-size: 30px;
+  }
+
+  .herosection img {
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 315px) {
+  .whereToBuy .right-col h1,
+  .keystrategies h1{
+    font-size: 20px;
+  }
+}
+
+
+/* 
+@media(max-width: 500px) and (min-width: 440px) {
+  .navbar,
+  .herosection,
+  .platformsection,
+  .whoarewe,
+  .trustedby,
+  .keystrategies,
+  .acceptDeposit,
+  .testimonial,
+  .marketchat,
+  .whereToBuy,
+  .craftedby,
+  .fastAndReliable,
+  .footer {
+    width: 500px;
+  }
+
+  .whereToBuy .navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+ 
+} */
+
