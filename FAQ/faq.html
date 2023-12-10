@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../utilities.css">
+    <link rel="stylesheet" href="../styles.css"/>
+    <title>Deluxe Capital</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container flex">
+        <a href="../index.html"><img src="../Images/logo.png" alt="Logo Image" /></a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About Us/aboutus.html">About Us</a></li>
+            <li><a href="../Our Services/services.html">Services</a></li>
+            <li><a href="../FAQ/faq.html">FAQ</a></li>
+            <li><a href="../Contact/contact.html">Contact</a></li>
+            <li><a href="../Login/login.html">Login</a></li>
+          </ul>
+        </nav>
+        <a class="btn signup-btn display" href="../Sign Up/signup.html">Sign-up</a>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars fa-spin"></i>
+        </div>
+      </div>
+      <!-- DROPDOWN MENU -->
+      <div class="dropdown-menu open">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../About Us/aboutus.html">About Us</a></li>
+          <li><a href="../Our Services/services.html">Services</a></li>
+          <li><a href="../FAQ/faq.html">FAQ</a></li>
+          <li><a href="../Contact/contact.html">Contact</a></li>
+          <li><a href="../Login/login.html">Login</a></li>
+          <li><a class="btn signup-btn" href="../Sign Up/signup.html">Sign-up</a></li>
+      </div>
+    </header>
+
+
+    <!-- FAQ -->
+    <section class="faq container">
+        <h1 class="y-c">Frequently Asked Questions on Deluxe Capital</h1>
+        <p class="w-c p">An In-Depth Guide to Navigating Deluxe Capital in the World of Cryptocurrency</p>
+
+            <div  class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>What is Deluxe Capital?</h5>
+                </div>
+                <div class="carded">
+                    <p>Deluxe Capital is a cutting-edge cryptocurrency investment company that specializes in 
+                        providing our investors with the highest returns on their investments. We employ a 
+                        team of experienced traders and financial experts who use advanced algorithms and 
+                        trading strategies to maximize returns while minimizing risk. Our platform is 
+                        user-friendly, secure and accessible from anywhere in the world. We also offer 24/7 
+                        customer support to ensure that our investors have all the information they need to 
+                        make informed investment decisions. With Millennium Investment, you can trust that
+                        your investments are in good hands and that you will see a significant return on your 
+                        investment. Invest in Deluxe Capital today and start seeing your money grow!</p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>What Type of Cryptocurrencies Does Deluxe Capital Support?</h5>
+                </div>
+                <div class="carded">
+                    <p>Deluxe Capital is proud to offer a versatile payment platform that accepts both 
+                        traditional currency and cutting-edge cryptocurrencies, including both Bitcoin and
+                        Ethereum. This allows our investors to easily and seamlessly fund their investment 
+                        portfolios with the currency of their choice.</p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>Is It Safe To Invest Cryptocurrencies Into Deluxe Capital?</h5>
+                </div>
+                <div class="carded">
+                    <p>At Deluxe Capital, the safety and security of our investors' investments is of utmost importance. 
+                        We utilize the latest encryption technologies and security protocols to ensure that your 
+                        cryptocurrency investments are protected at all times. Whether you are a seasoned investor 
+                        or just starting out, you can have peace of mind knowing that your assets are secure with Deluxe 
+                        Capital.</p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>How Do I Create An Account And Start Investing?</h5>
+                </div>
+                <div class="carded">
+                    <p>Maintain profitability with our organization by Clicking on the Sign-up button. Fill the form, 
+                        and you are good to go. We can't wait to have you as one of our investors.</p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>What Are The Fees Involved In Investing With Deluxe Capital?</h5>
+                </div>
+                <div class="carded">
+                    <p>At Deluxe Capital, we are committed to providing our investors with a cost-effective and 
+                        transparent investment experience. As part of this commitment, we do not charge any fees 
+                        for investment transactions or withdrawals, allowing our investors to maximize the growth 
+                        of their portfolios without incurring additional costs. Any charge you may get during investing
+                        or withdrawal is <span class="r-c">NOT FROM US.</span></p>
+                </div> 
+            </div><div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>What Is The Minimum Amount Required To Invest With Deluxe Capital?</h5>
+                </div>
+                <div class="carded">
+                    <p>At Deluxe Capital, we believe in providing access to high-quality investment opportunities for 
+                        individuals at all levels. To this end, we have established a low minimum investment threshold 
+                        of 100 pounds, allowing investors to begin building their portfolios with ease and without a 
+                        large upfront investment.</p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>How Do I Withdraw My Investments From Deluxe Capital?</h5>
+                </div>
+                <div class="carded">
+                    <p>Our user-friendly dashboard makes this very easy. Simply click on the withdraw button, 
+                        enter how much you want to withdraw, and then select the wallet you want to use, and 
+                        submit. Before 24hrs the amount will be credited to the wallet you chose. Any delay 
+                        might be from your wallet company, nevertheless, don't hesitate to reach out to use 
+                        and drop any complain. We will attend to you <span class="r-c">IMMEDIATELY.</span></p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>Can I Invest In Multiple Package At The Same Time With Deluxe Capital?</h5>
+                </div>
+                <div class="carded">
+                    <p>At Deluxe Capital, we recognize that different investors have different investment goals 
+                        and strategies. That's why we offer a range of investment packages, allowing our investors 
+                        to diversify their portfolios and invest in multiple options simultaneously. Whether you 
+                        are looking for short-term gains or long-term growth, our flexible investment options give 
+                        you the ability to build the portfolio that meets your specific investment needs.</p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>How Does Deluxe Capital Protect My Personal Information And Investment?</h5>
+                </div>
+                <div class="carded">
+                    <p>At Deluxe Capital, the protection of our investors' data and personal information is of utmost 
+                        importance. We employ robust security measures, including encrypted data storage and multi-factor 
+                        authentication, to ensure that your information is secure at all times. In addition, we are fully
+                        compliant with all relevant privacy and data protection regulations, giving you peace of mind that 
+                        your information is always safe in our hands</p>
+                </div> 
+            </div>
+            <div class="faq-item" onclick="toggleDropdown(this)">
+                <div class="boxes">
+                    <h5>How DOes Deluxe Capital Keep Up With Contantly CHanging Cryptocurrency Market Trends?</h5>
+                </div>
+                <div class="carded">
+                    <p>At Deluxe Capital, we understand that the cryptocurrency market is highly dynamic and constantly 
+                        evolving. To stay ahead of the curve, we have a dedicated team of market experts who closely 
+                        monitor the latest trends and developments in the industry. This allows us to make informed 
+                        investment decisions, ensuring that our investors' portfolios are always optimized for maximum growth. 
+                        Additionally, we use advanced analytics tools and data-driven insights to make informed predictions 
+                        about market movements and ensure that our investors are always ahead of the game.</p>
+                </div> 
+            </div>
+    </section>
+
+
+    <!-- FAST AND RELIABLE SECTION -->
+    <section class="fastAndReliable">
+      <div class="container box">
+        <div>
+          <h2>FAST AND RELIABLE IN DEPOSITING AND WITHDRAWAL OPTION</h2>
+          <div class="fast-icons flex">
+            <div><img src="../Images/bitcoin.png" alt="Bitcoin Icon" /></div>
+            <div><img src="../Images/litecoin.png" alt="Litecoin Icon" /></div>
+            <div><img src="../Images/ethereum.png" alt="Ethereum Icon" /></div>
+            <div><img src="../Images/cardano.png" alt="Cardano Icon" /></div>
+            <div><img src="../Images/solana.png" alt="Solana Icon" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer">
+      <div class="container grid">
+        <div class="log">
+          <a href="../index.html"><img src="../Images/logo.png" alt="Logo Image"/></a>
+          <p>
+            Park Industrial Estate, Perivale, 32 Horsenden Ln S, Perivale,
+            London UB6 7RH, United Kingdom.
+          </p>
+          <p>admin@deluxecapital.org upport@deluxecapital.org</p>
+        </div>
+        <div class="home">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About Us/aboutus.html">About Us</a></li>
+            <li><a href="../Our Services/services.html">Service</a></li>
+            <li><a href="../FAQ/faq.html">FAQ</a></li>
+          </ul>
+          <div class="home">
+            <ul>
+              <li><a href="../Login/login.html">Login</a></li>
+              <li><a href="../Sign Up/signup.html">Sign-Up</a></li>
+              <li><a href="../Privacy/privacy.html">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="news">
+          <h2>Subscribe To Our Newsletter</h2>
+          <form action="#">
+            <input class="email-btn" type="email" required placeholder="Enter your email...">
+            <button class="btn email-btn">Subscribe</button>
+            <p>Copyright &copy; 2023. All Rights Fully Reserved</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVA SCRIPT MODAL -->
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn')
+      const toggleBtnIcon = document.querySelector('.toggle-btn i')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars' 
+      }
+
+      function toggleDropdown(item) {
+            item.classList.toggle('active');
+        }
+
+    </script>
+  </body>
+</html>
