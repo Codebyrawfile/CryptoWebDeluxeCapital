@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #0f2331;
+    --secondary-color: #d4af37;
+    --light-color: #84d2c5;
+}
+
+
+.services {
+    background-color: var(--primary-color);
+    padding: 40px;
+}
+
+.services h1 {
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+.services .grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.services .card {
+    background-color: #fff;
+    color: var(--primary-color);
+    margin-top: 60px;
+    transition: background-color 0.7s, transform 0.7s;
+}
+
+.services .card:hover{
+    background-color: var(--light-color);
+    transform: scale(2.8s);
+}
+.services .card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.services .fa {
+    color: var(--secondary-color);
+
+}
+
+.dots ul {
+    display: flex;
+    gap: 8px;
+}
+
+.dots div {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.serv {
+    margin-top: 40px;
+}
+
+
+
+
+
+/* SECOND SERVICES */
+.second-serv {
+    padding: 40px;
+    color: white;
+}
+
+
+.second-serv h1 {
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+.second-serv .grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.second-serv .card {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 60px;
+    transition: background-color 0.7s, transform 0.7s;
+}
+
+.second-serv .card:hover{
+    color: #333;
+    background-color: #fff;
+    transform: scale(2.8s);
+}
+.second-serv .card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.second-serv .fa {
+    color: var(--light-color);
+
+}
+
+.dots ul {
+    display: flex;
+    gap: 8px;
+}
+
+.dots div {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.serv {
+    margin-top: 40px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/* TABLET SCREEN */
+@media(max-width: 786px){
+    .services .grid,
+    .second-serv .grid {
+        display: block;
+    }
+}
+
+
+/* MOBILE SCREENS */
+@media(max-width: 486px) {
+    .services .grid,
+    .second-serv .grid {
+        display: block;
+    }
+}
+
+@media(max-width: 380px) {
+   .services h1,
+   .second-serv h1 {
+    font-size: 35px;
+   }
+}
