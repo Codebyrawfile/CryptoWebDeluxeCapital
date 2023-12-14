@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #0f2331;
+    --secondary-color: #d4af37;
+    --light-color: #84d2c5;
+}
+
+.policies {
+    margin-top: 80px;
+}
+
+.policies h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.policies .policy-content h1 {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-top: 30px;
+    text-align: left;
+}
+
+.policies p {
+    text-align: justify;
+}
+
+/* MEDIA QUERY */
+
+/* MOBILE SCREEN */
+@media(max-width: 486px){
+    .policies h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .policies .policy-content h1 {
+        font-size: 15px;
+        color: var(--secondary-color);
+        margin-top: 30px;
+        text-align: left;
+    }
+    
+    .policies p {
+        font-size: 12px;
+        text-align: justify;
+    }
+  }
